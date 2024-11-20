@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Delmon Delicate';
+    src: url('/Fonts/Delmon Delicate.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Delmon Delicate', sans-serif; /* känns onödigt att skriva varje gång men går sönder annars? googla senare eller fråga gpt */
+    color: antiquewhite;
+    margin: 0; 
+}
+
+h1 {
+    font-family: 'Delmon Delicate', sans-serif;
+    font-size: 8em;
+    color: antiquewhite;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    justify-content: center; 
+    align-items: center; 
+}
+
+h2{
+    font-family: 'Delmon Delicate', sans-serif;
+    font-size: 2em;
+    color: antiquewhite;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+h3 {
+    font-family: 'Delmon Delicate', sans-serif;
+    font-size: 2em;
+    color: antiquewhite;
+    padding: 10px;
+}
+
+h4 {
+    font-family: 'Delmon Delicate', sans-serif;
+    font-size: 2em;
+    color: antiquewhite;
+    padding: 1px;
+    margin-left: -100px; /* va lättare att göra det här än att lägga till en hel section för VIP knappen */
+}
+
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#content {
+    position: relative;
+    z-index: 2; 
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+input {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 200px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    border: none;
+}
+
+#enterBtn {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); 
+    border-radius: 12px;
+    border: none;
+    color: antiquewhite;
+    font-size: 1.2em; 
+    cursor: pointer;  
+    background-size: 200% 100%;  /* Gör gradienten dubbelt så bred som knappen */
+    transition: background-position 0.5s ease;  /* Mjuk animation när bakgrunden rör sig */
+}
+
+#enterBtn:hover {
+    background-position: 100% 0;  /* Flytta gradienten åt höger vid hover funktionen */ /*fyfan gör aldrig en färgad knapp igen */
+}
+

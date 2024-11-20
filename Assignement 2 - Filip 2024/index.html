@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Grit Nightclub Malmö - Verify</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        #content {
+            position: relative;
+            z-index: 1;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    
+    <h1>GRIT NIGHT CLUB</h1>
+    <h2>Malmö's most Exclusive Nightclub</h2>
+    
+    <video autoplay loop muted>
+        <source src="videos/background.mp4" type="video/mp4">
+    </video>
+    
+    <div id="content">
+        <input type="number" name="inputAge" id="inputAge" value="16">
+        <h3>Age</h3>
+        <input type="checkbox" name="checkboxVip" id="checkboxVip" value="option1">
+        <h4>VIP Customer</h4>
+        <script src="Scripts/scripts.js"></script>
+    </div>
+
+<body2>
+    <input type="button" value="Enter Grit Club" id="enterBtn">
+</body2>
+
+</html>
